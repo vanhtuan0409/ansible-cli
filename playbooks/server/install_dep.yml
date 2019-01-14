@@ -1,0 +1,6 @@
+- name: INSTALL DEPENDENCIES
+  gather_facts: no
+  hosts: "{{ target | default(env + '.primary') }}"
+  tasks:
+    - debug:
+        msg: "hello"

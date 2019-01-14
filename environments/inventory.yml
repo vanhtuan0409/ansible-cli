@@ -1,0 +1,10 @@
+all:
+  children:
+    production:
+      hosts:
+        production.primary:
+          ansible_host: XX.YY.ZZ
+    staging:
+      hosts:
+        staging.primary:
+          ansible_host: XX.YY.ZZ
